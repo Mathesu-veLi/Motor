@@ -19,3 +19,7 @@ void Motor::back() {
   analogWrite(pinR, 150);
 }
 
+void Motor::stop() {
+  digitalWrite(pinL, LOW);
+  digitalWrite(pinR, LOW);
+}
