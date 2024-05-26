@@ -9,3 +9,7 @@ Motor::Motor(int pinL, int pinR) {
   pinMode(pinR, OUTPUT); 
 }
 
+void Motor::forward() {
+  analogWrite(pinL, 150);
+  digitalWrite(pinR, LOW);
+}
