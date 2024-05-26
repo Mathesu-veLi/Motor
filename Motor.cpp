@@ -9,8 +9,17 @@ Motor::Motor(int pinL, int pinR) {
   pinMode(pinR, OUTPUT); 
 }
 
+Motor::Motor(int pinL, int pinR, int defaultSpeed) {
+  this->pinL = pinL;
+  this->pinR = pinR;
+  this->defaultSpeed = defaultSpeed;
+
+  pinMode(pinL, OUTPUT);
+  pinMode(pinR, OUTPUT); 
+}
+
 void Motor::forward() {
-  analogWrite(pinL, 150);
+  analogWrite(pinL, defaultSpeed);
   digitalWrite(pinR, LOW);
 }
 
@@ -21,7 +30,7 @@ void Motor::forward(int speed) {
 
 void Motor::back() {
   digitalWrite(pinL, LOW);
-  analogWrite(pinR, 150);
+  analogWrite(pinR, defaultSpeed);
 }
 
 void Motor::back(int speed) {
