@@ -14,6 +14,11 @@ void Motor::forward() {
   digitalWrite(pinR, LOW);
 }
 
+void Motor::forward(int speed) {
+  analogWrite(pinL, speed);
+  digitalWrite(pinR, LOW);
+}
+
 void Motor::back() {
   digitalWrite(pinL, LOW);
   analogWrite(pinR, 150);
