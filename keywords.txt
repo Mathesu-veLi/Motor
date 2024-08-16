@@ -1,0 +1,11 @@
+# Class constructor
+Motor KEYWORD1
+
+# Method to make the motor go to forward
+forward KEYWORD2
+
+# Method to make the motor go to back
+back KEYWORD3
+
+# Method to make the motor stop
+stop KEYWORD4
