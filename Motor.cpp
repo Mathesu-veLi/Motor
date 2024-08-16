@@ -4,7 +4,7 @@
 Motor::Motor(int pinL, int pinR) {
   this->pinL = pinL;
   this->pinR = pinR;
-  this->defaultSpeed = 150;
+  this->defaultSpeed = 127;
 
   pinMode(pinL, OUTPUT);
   pinMode(pinR, OUTPUT); 
