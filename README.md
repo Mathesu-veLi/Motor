@@ -3,8 +3,8 @@
 A simple yet powerful library for DC motor control with Arduino. 🛠️
 
 ## 📦 Installation
-1. ⬇️ Download `Motor.h` and `Motor.cpp`  
-2. 📂 Place them in your Arduino project folder  
+1. ⬇️ Download the Motor.zip in Releases
+2. 📂 Extract file and place the folder in your Arduino project folder
 3. ➕ Include in your sketch: `#include <Motor.h>`  
 
 ## 🎮 Basic Usage
